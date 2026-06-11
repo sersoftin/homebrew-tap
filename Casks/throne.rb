@@ -22,7 +22,7 @@ cask "throne" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   # Важно: приложение не подписано, нужен workaround
   app "Throne/Throne.app"
