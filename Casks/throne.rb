@@ -28,10 +28,9 @@ cask "throne" do
   app "Throne/Throne.app"
 
   # Удалить карантин после установки (т.к. нет подписи)
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-d", "com.apple.quarantine", "#{appdir}/Throne.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-d", "com.apple.quarantine", "{{appdir}}/Throne.app"]
   end
 
   uninstall quit: "moe.Throne.macosx"
