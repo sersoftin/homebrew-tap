@@ -1,5 +1,5 @@
 cask "throne" do
-  version "1.2.4"
+  version "1.3.2"
 
   # Отдельные sha256 для каждой архитектуры
   on_arm do
