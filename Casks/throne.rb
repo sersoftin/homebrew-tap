@@ -3,12 +3,12 @@ cask "throne" do
 
   # Отдельные sha256 для каждой архитектуры
   on_arm do
-    sha256 "ef9fb2209088701e4926d3520712c6b6f737b81d8b6c40e139b7a913840f48eb"
+    sha256 "c5371633f17e46d18d999206a79bafe4ec1b20e03acf51171261f3084b702b16"
 
     url "https://github.com/throneproj/Throne/releases/download/#{version}/Throne-#{version}-macos-arm64.zip"
   end
   on_intel do
-    sha256 "09dc2b830d0967bd7dfb6028c6ed513ac82ed1aaf0082f4b2b5ec326b8636f8a"
+    sha256 "b5312bd4b6aceb5d2107be06fb6a407ec4da5159c5da0b428ac26c784bf404a9"
 
     url "https://github.com/throneproj/Throne/releases/download/#{version}/Throne-#{version}-macos-amd64.zip"
   end
